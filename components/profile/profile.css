@@ -1,0 +1,53 @@
+.profile-card__list {
+    gap: 10px;
+}
+
+.profile-card__img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.profile-card__name {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grey-700);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.profile-card__about {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grey-700);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.profile__bio {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grey-800);
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+.profile-card__icons{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.profile-card__icon{
+
+}
+
+
+.icon-question--profile {
+    font-size: 2.5rem;
+    color: var(--primary-900);
+}
+
+.icon-bookmark {
+    font-size: 2.5rem;
+    color: var(--primary-900);
+}
