@@ -3,12 +3,14 @@
 header{
     width: 100%;
     position: fixed;
-    height:80px; top:0;
+    height: 10%; 
+    top:0;
 }
 
 footer{
     position: fixed;
-    height:80px; bottom:0;
+    height: 10%; 
+    bottom:0;
 }
 
 main{

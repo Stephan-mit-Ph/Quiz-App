@@ -33,19 +33,19 @@
 
 .nav__icon{
     color: var(--grey-500);
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .nav__icon:hover {
     color: var(--primary-900);
     opacity:70%;
-    font-size: 3rem;
+    font-size: 2.5rem;
     transition: 1.2s;
 }
 
 .nav__icon--selected {
     color: var(--primary-900);
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .nav__link {
