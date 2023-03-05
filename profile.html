@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="header">
-    <h1 class="header__title">Quiz App</h1>
+    <img class="title-image" src="/assets/Quiz App.png" alt="title-image"/>
   </header>
   <main>
     <div class="card--list profile-card__list">
@@ -34,16 +34,17 @@
           <span>4</span>
         </li>
       </ul>
-      <h2 id="title">Settings</h2>
-    <form class="profile__settings" aria-labelledby="title">
-      <input
-        type="checkbox"
-        id="switch-darkmode"
-        class="profile__settings-darkmode-input"
-      />
-      <label for="switch-darkmode" class="profile__settings-darkmode-label">Toggle Darkmode</label>
-    </form>
-  </div>
+      <section class="settings">
+        <input
+          class="toggle__checkbox"
+          type="checkbox"
+          id="darkmode-toggle"
+          data-js="toggle"
+        />
+        <label class="toggle__switch" for="darkmode-toggle"></label>
+        <p>Dark mode</p>
+      </section>
+  </div> 
   </main>
   <footer class="footer">
     <nav class="footer__nav">
