@@ -24,8 +24,9 @@
 
 .profile__bio {
     font-family: 'Montserrat', sans-serif;
-    color: var(--grey-800);
+    color: var(--grey-700);
     text-align: center;
+    font-weight: 500;
     font-size: 1rem;
 }
 
