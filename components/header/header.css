@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 1;
     background-color: var(--background-500);
     box-shadow:  4px 4px 8px var(--shadow-color1),-4px -4px 8px var(--shadow-color2);
     z-index: 1;
@@ -13,5 +12,5 @@
     text-align: center;
     font-family: 'Fauna', sans-serif;
     font-weight: 600;
-    font-size: 2.1rem;   
+    font-size: 2rem;   
 }
