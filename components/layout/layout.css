@@ -1,0 +1,31 @@
+
+
+header{
+    width: 100%;
+    position: fixed;
+    height:80px; top:0;
+}
+
+footer{
+    position: fixed;
+    height:80px; bottom:0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 80%;
+    overflow:auto;
+    align-items: center
+
+}
+
+.container {
+    z-index: 1;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
