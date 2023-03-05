@@ -5,6 +5,9 @@
 .profile-card__img {
     width: 200px;
     height: 200px;
+    border-radius: 10px;
+    border: 1px solid var(--grey-500);
+    box-shadow: var(--box-shadow);
 }
 
 .profile-card__name {
