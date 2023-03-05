@@ -12,6 +12,7 @@
 }
 
 .btn--answer {
+    font-family: 'Montserrat', sans-serif;
     color: var(--secondary-950);
     background: var(--secondary-500); 
     font-size: 14px;
