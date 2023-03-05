@@ -32,6 +32,6 @@ main{
     align-items: center;
 }
 
-a {
+a, li {
     list-style: none;
 }

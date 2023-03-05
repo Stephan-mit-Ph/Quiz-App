@@ -7,6 +7,7 @@
 @import '/components/card/card.css';
 @import '/components/button/button.css';
 @import '/components/bookmark/bookmark.css';
+@import '/components/profile/profile.css';
 @import '/components/footer/footer.css';
 
 @font-face {
@@ -56,6 +57,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-help-circle:before {
+    content: "\e90f";
+  }
   .icon-bookmark-filled:before {
     content: "\e900";
   }
