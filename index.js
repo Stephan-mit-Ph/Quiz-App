@@ -15,16 +15,16 @@ bookmarkBtn();
 
 
 // show/hide answer and button content
-const answerButton = document.querySelector('[data-js="answer-button"]');
-const answer = document.querySelector('[data-js="card-answer"]');
+    const answerButton = document.querySelector('[data-js="answer-button"]');
+    const answer = document.querySelector('[data-js="card-answer"]');
 
-answerButton.addEventListener("click", () => {
-  answer.classList.toggle("card__answer--active");
+    answerButton.addEventListener("click", () => {
+      answer.classList.toggle("card__answer--active");
 
 
-  if (answer.classList.contains("card__answer--active")) {
-    answerButton.textContent = "Hide Answer";
-  } else {
-    answerButton.textContent = "Show Answer";
-  }
-});
+      if (answer.classList.contains("card__answer--active")) {
+        answerButton.textContent = "Hide Answer";
+      } else {
+        answerButton.textContent = "Show Answer";
+      }
+    });
