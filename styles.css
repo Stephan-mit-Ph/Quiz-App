@@ -1,6 +1,109 @@
+@import '/css/reset.css';
+@import '/css/globals.css';
+@import '/css/typography.css';
+@import '/css/colors.css';
+@import '/css/spacing.css';
+@import '/components/header.css';
+@import '/components/footer.css';
+
+:root {
+	--bg-color: var(--bg-light-500);
+	--text-color: var(--bg-dark-500);
+	--transition-duration: 0s;
+	--primary: var(--primary-600);
+	--secondary-light: var(--secondary-600);
+}
+
 body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+.container {
+	border: 1px solid var(--text-color);
+	padding: 20px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+	--bg-color: var(--bg-dark-500);
+	--text-color: var(--bg-light-500);
+	--primary: var(--primary-400);
+	--secondary: var(--secondary-400);
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+/* Apply transitions only when the transition class is present */
+body.transition-active {
+	transition: background-color 0.3s, color 0.3s;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.theme-switch {
 	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+	font-size: 16px;
+	color: var(--text-color);
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--bg-darken);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	content: '';
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider {
+	background-color: var(--text-color);
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px var(--text-color);
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
 }

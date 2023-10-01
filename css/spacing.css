@@ -1,0 +1,31 @@
+	:root {
+		--space-3xs: clamp(0.25rem, 0.228rem + 0.0939vw, 0.3125rem);
+		--space-2xs: clamp(0.5rem, 0.434rem + 0.2817vw, 0.6875rem);
+		--space-xs: clamp(0.75rem, 0.662rem + 0.3756vw, 1rem);
+		--space-s: clamp(1rem, 0.89rem + 0.4695vw, 1.3125rem);
+		--space-m: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+		--space-l: clamp(2rem, 1.7799rem + 0.939vw, 2.625rem);
+		--space-xl: clamp(3rem, 2.6699rem + 1.4085vw, 3.9375rem);
+		--space-2xl: clamp(3.5rem, 3.1039rem + 1.6901vw, 4.625rem);
+		--space-3xl: clamp(4rem, 3.5599rem + 1.8779vw, 5.25rem);
+		--space-4xl: clamp(6rem, 5.3398rem + 2.8169vw, 7.875rem);
+
+		/* One-up pairs */
+		--space-3xs-2xs: clamp(0.25rem, 0.096rem + 0.6573vw, 0.6875rem);
+		--space-2xs-xs: clamp(0.5rem, 0.3239rem + 0.7512vw, 1rem);
+		--space-xs-s: clamp(0.75rem, 0.5519rem + 0.8451vw, 1.3125rem);
+		--space-s-m: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+		--space-m-l: clamp(1.5rem, 1.1039rem + 1.6901vw, 2.625rem);
+		--space-l-xl: clamp(2rem, 1.3178rem + 2.9108vw, 3.9375rem);
+		--space-xl-2xl: clamp(3rem, 2.4278rem + 2.4413vw, 4.625rem);
+		--space-2xl-3xl: clamp(3.5rem, 2.8838rem + 2.6291vw, 5.25rem);
+		--space-3xl-4xl: clamp(4rem, 2.6356rem + 5.8216vw, 7.875rem);
+
+		/* Custom pairs */
+		--space-3xs-s: clamp(0.25rem, -0.1241rem + 1.5962vw, 1.3125rem);
+		--space-: ;
+		--space-xl-s: clamp(1.3125rem, 3.5942rem + -2.5352vw, 3rem);
+        
+        --header-height: var(--space-2xl);
+	}
+

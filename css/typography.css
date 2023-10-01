@@ -1,0 +1,94 @@
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('../public/fonts/icomoon.eot?npxdza');
+	src: url('../public/fonts/icomoon.eot?npxdza#iefix') format('embedded-opentype'),
+		url('../public/fonts/icomoon.ttf?npxdza') format('truetype'),
+		url('../public/fonts/icomoon.woff?npxdza') format('woff'),
+		url('../public/fonts/icomoon.svg?npxdza#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Orbitron';
+	src: url('../public/fonts/Orbitron-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url('../public/fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url('../public/fonts/SourceCodePro-Italic-VariableFont_wght.ttf') format('truetype');
+	font-style: italic;
+	font-display: block;
+}
+
+:root {
+	--step--2: clamp(0.6944rem, 0.6431rem + 0.2188vw, 0.84rem);
+	--step--1: clamp(0.8331rem, 0.7568rem + 0.3258vw, 1.05rem);
+	--step-0: clamp(1rem, 0.89rem + 0.4695vw, 1.3125rem);
+	--step-1: clamp(1.2rem, 1.0449rem + 0.662vw, 1.6406rem);
+	--step-2: clamp(1.44rem, 1.225rem + 0.9174vw, 2.0506rem);
+	--step-3: clamp(1.7281rem, 1.4339rem + 1.2554vw, 2.5638rem);
+	--step-4: clamp(2.0738rem, 1.6756rem + 1.6986vw, 3.2044rem);
+	--step-5: clamp(2.4881rem, 1.9538rem + 2.2798vw, 4.0056rem);
+
+	--font-family: 'Source Code Pro', monospace;
+	--font-display: 'Orbitron', sans-serif;
+
+	--font-weight-light: 300;
+	--font-weight-regular: 400;
+}
+
+i {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sun-02:before {
+	content: '\e909';
+}
+.icon-circle-plus:before {
+	content: '\e907';
+}
+.icon-square-plus:before {
+	content: '\e908';
+}
+.icon-user:before {
+	content: '\e900';
+}
+.icon-home:before {
+	content: '\e901';
+}
+.icon-bookmark-regular:before {
+	content: '\e902';
+}
+.icon-bookmark-solid:before {
+	content: '\e903';
+}
+.icon-moon:before {
+	content: '\e904';
+}
+.icon-sun:before {
+	content: '\e906';
+}
