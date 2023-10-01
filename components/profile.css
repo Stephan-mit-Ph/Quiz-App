@@ -1,0 +1,44 @@
+.profile-card__list {
+	padding-top: 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 500px;
+	gap: var(--space-s);
+}
+
+.profile-card__img {
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	border: 1px solid var(--text-color);
+}
+
+.profile-card__name {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.profile-card__about {
+	text-align: left;
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.profile__bio {
+	text-align: left;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.profile-card__icons {
+	width: 200px;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0;
+}
+
+.profile-card__icons i {
+	font-size: 2.5rem;
+	color: var(--text-color);
+}

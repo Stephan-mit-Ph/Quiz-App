@@ -5,6 +5,7 @@
 @import './colors.css';
 @import '../components/header.css';
 @import '../components/footer.css';
+@import '../components/profile.css';
 /* Light mode styles */
 :root {
 	--bg-color: var(--bg-light-500);

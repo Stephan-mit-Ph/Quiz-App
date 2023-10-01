@@ -7,14 +7,17 @@ body {
 	color: var(--color-text);
 	background-color: var(--color-background);
 	font-family: var(--font-family);
-	font-weight: var(--font-weight-light);
+	font-weight: var(--font-weight-regular);
 	transition: background-color 0.2s ease-out, color 0.2s ease-out;
-
 }
 
 main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	height: calc(100vh - var(--space-2xl) - var(--space-2xl));
+	overflow: auto;
 	max-width: 1200px;
 	padding: var(--space-s);
 }
@@ -23,8 +26,6 @@ main {
 	border: 1px solid var(--text-color);
 	padding: 20px;
 }
-
-
 
 /* Apply transitions only when the transition class is present */
 body.transition-active {
@@ -37,6 +38,7 @@ body.transition-active {
 	display: inline-block;
 	width: 60px;
 	height: 34px;
+	margin-bottom: var(--space-2xl);
 }
 
 .theme-switch input {
@@ -81,4 +83,14 @@ input:checked + .slider:before {
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+p {
+	text-align: left;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
