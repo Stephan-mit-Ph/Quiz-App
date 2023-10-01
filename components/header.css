@@ -1,0 +1,15 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: var(--space-2xl);
+}
+
+.header__title {
+	font-family: var(--font-display);
+	font-weight: var(--font-weight-regular);
+}

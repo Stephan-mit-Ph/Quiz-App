@@ -1,0 +1,84 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: var(--color-text);
+	background-color: var(--color-background);
+	font-family: var(--font-family);
+	font-weight: var(--font-weight-light);
+	transition: background-color 0.2s ease-out, color 0.2s ease-out;
+
+}
+
+main {
+	width: 100%;
+	height: calc(100vh - var(--space-2xl) - var(--space-2xl));
+	max-width: 1200px;
+	padding: var(--space-s);
+}
+
+.container {
+	border: 1px solid var(--text-color);
+	padding: 20px;
+}
+
+
+
+/* Apply transitions only when the transition class is present */
+body.transition-active {
+	transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styles for the theme toggle switch */
+.theme-switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.theme-switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--text-color);
+	transition: 0.4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	content: '';
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: var(--bg-color);
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider {
+	background-color: var(--text-color);
+}
+
+input:checked + .slider:before {
+	transform: translateX(26px);
+	background-color: var(--bg-color);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}

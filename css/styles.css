@@ -1,0 +1,41 @@
+@import './reset.css';
+@import './globals.css';
+@import './typography.css';
+@import './spacing.css';
+@import './colors.css';
+@import '../components/header.css';
+@import '../components/footer.css';
+/* Light mode styles */
+:root {
+	--bg-color: var(--bg-light-500);
+	--text-color: var(--bg-dark-500);
+	--transition-duration: 0s;
+	--primary: var(--primary-600);
+	--secondary-light: var(--secondary-600);
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+.container {
+	border: 1px solid var(--text-color);
+	padding: 20px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+	--bg-color: var(--bg-dark-500);
+	--text-color: var(--bg-light-500);
+	--primary: var(--primary-400);
+	--secondary: var(--secondary-400);
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+/* Apply transitions only when the transition class is present */
+body.transition-active {
+	transition: background-color 0.3s, color 0.3s;
+}
